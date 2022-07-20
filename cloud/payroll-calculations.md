@@ -76,9 +76,8 @@
 				From = From & (Year(PayDate) - 1)
 			else
 				From = From & Year(PayDate)
-			end if
 
-			 ThisYearLeaveLoading = SUM(PAY_Record.LeaveLoading) : Pay-Period :
+			ThisYearLeaveLoading = SUM(PAY_Record.LeaveLoading) : Pay-Period :
 				PayDate >= From
 				AND PayDate <= PayDate)
 				AND Excluding This Pay Period
@@ -174,7 +173,7 @@
 				(IncludeInGrossSalary = 'Y') Or OverrideIncludeInGrossSalary = 'Y')
 				(IncludeInSuper = 'N' Or OverrideIncludeInSuper = 'N')
 
-	> [AGS4S:Adjusted Gross Salary for Superannuation]: [GS-LL:Gross Salary inus Leave Loading] minus [SSE:Salary Superannuation Exclusions]
+	> [AGS4S:Adjusted Gross Salary for Superannuation]: [GS-LL:Gross Salary minus Leave Loading] minus [SSE:Salary Superannuation Exclusions]
 
 		MonthGrossSalary = MonthGrossSalary - SuperCalculationMonthExclusion
 
@@ -287,7 +286,7 @@
 			WeeklyGross = WeeklyGross + 0.99
 		
 		PAY_BIMONTHLY
-			WeeklyGross = acGrossSalary
+			WeeklyGross = GrossSalary
 
 			WeeklyGross = WeeklyGross * 24 / 52
 
@@ -407,7 +406,7 @@
 ```			
 
 
-# CalculateSuper-AU < acSalary, iTypeId
+# CalculateSuper-AU < Salary, Type
 
 ```
 	## [SPRET-SALARY] [SPOSTT-SALARY]
