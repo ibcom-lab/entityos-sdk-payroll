@@ -17,7 +17,7 @@ The FINANCIAL_PAYROLL_PAY_PROCESS method is an Australian specific method for ca
 
 If the entity is in any other country, or if in Australia and want to control all the logic, you can build your own logic with in the user interface or a node app.
 
-All code is provided as is and should be fully tested in relation to your obligations under any countries governance obligations/law.
+All code is provided as-is, including the FINANCIAL_PAYROLL_PAY_PROCESS cloud service method, and should be fully tested in relation to your obligations under any countries governance obligations/law.
 
 ## User Interface (js)
 
