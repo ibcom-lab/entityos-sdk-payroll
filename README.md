@@ -11,7 +11,7 @@ entityOS includes functionality to help an entity with employee payroll manageme
 The cloud service methods are available at the FINANCIAL endpoint:
 - https://docs.entityos.cloud/endpoint_financial
 
-The FINANCIAL_PAYROLL_PAY_PROCESS method is an Australian specific method for calculating tax etc.  The logic for the calculations are provided within this repo to verifiy the logic suits your needs.
+The FINANCIAL_PAYROLL_PAY_PROCESS method is an Australian specific method for calculating tax etc.  The logic for the calculations are provided within this repo to verify the logic suits your needs.
 - https://github.com/ibcom-lab/entityos-sdk-payroll/blob/main/cloud/payroll-calculations.md
 - https://docs.entityos.cloud/FINANCIAL_PAYROLL_PAY_PROCESS
 
